@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Homework 2</string>
+    <string name="randomButton">randomButton</string>
+    <string name="redSeek">redSeek</string>
+    <string name="greenSeek">greenSeek</string>
+    <string name="blueSeek">blueSeek</string>
+    <string name="redText">RED</string>
+    <string name="greenText">GREEN</string>
+    <string name="blueText">BLUE</string>
+    <string name="hairOptions">hairOptionsText</string>
+    <string name="buttonGroup">buttonGroup</string>
+
+    <string-array name="hairSpinner">
+        <item>HairstyleOne</item>
+        <item>HairstyleTwo</item>
+        <item>Bald</item>
+    </string-array>
+
+</resources>
