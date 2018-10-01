@@ -23,13 +23,17 @@ public class Face extends SurfaceView{
     private int radioSelect;
     private int selectedItem;
 
+    /**
+     * Face class
+     *
+     * @param context
+     * @param set
+     */
     public Face(Context context, AttributeSet set){
         super(context, set);
         setWillNotDraw(false);
 
         this.selectedItem = 0;
-
-
     }
 
     /**
@@ -47,6 +51,10 @@ public class Face extends SurfaceView{
                 random.nextInt(225), random.nextInt(225));
     }
 
+    /**
+     * randomizeHair method
+     * @return hairNumber
+     */
     public int randomizeHair(){
         Random random = new Random();
         int hairNumber = random.nextInt(3);
@@ -96,6 +104,8 @@ public class Face extends SurfaceView{
 
         invalidate();
     }
+
+
     public int getSkin() {return skinColor;}
     public void setSkin(int skinColor) { this.skinColor = skinColor; }
     public int getHair() {return hairColor;}
@@ -105,8 +115,9 @@ public class Face extends SurfaceView{
     public int getHairStyle() { return hairStyle; }
 
 
-    /*SetHairStyle
-    @param hairStyle
+    /*
+     *SetHairStyle
+     *@param hairStyle
      */
     protected void setHairStyle(int hairStyle) {
         this.hairStyle = hairStyle;
