@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         android.widget.SeekBar redSeekBar =
                 (SeekBar) findViewById(R.id.redSeek);
         redSeekBar.setOnSeekBarChangeListener
-                (new redSeekBarListener());
+                (new redSeekBarListener(aFace));
 
         android.widget.SeekBar greenSeekBar =
                 (SeekBar) findViewById(R.id.greenSeek);
@@ -117,10 +117,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
      */
     private class redSeekBarListener
             implements SeekBar.OnSeekBarChangeListener {
+        private Face aFace;
+        redSeekBarListener(Face fv){
+            this.aFace=fv;
+        }
+
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-
+            aFace.setSkin(666);// get alpha, red green blue values, keep it, then set the red value to a new one
 
         }
 
